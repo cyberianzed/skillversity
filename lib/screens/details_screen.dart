@@ -32,12 +32,11 @@ class DetailsScreen extends StatelessWidget {
         children: <Widget>[
           Container(
             height: size.height * .45,
+            // child: Expanded(
+            //   child: SvgPicture.asset("assets/icons/uiux.svg"),
+            // ),
             decoration: BoxDecoration(
               color: kBlueLightColor,
-              image: DecorationImage(
-                image: AssetImage("assets/images/meditation_bg.png"),
-                fit: BoxFit.fitWidth,
-              ),
             ),
           ),
           SafeArea(
@@ -106,7 +105,7 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      //margin: EdgeInsets.symmetric(horizontal: 20),
                       //padding: EdgeInsets.all(10),
                       height: 90,
                       decoration: BoxDecoration(
@@ -122,11 +121,16 @@ class DetailsScreen extends StatelessWidget {
                         ],
                       ),
                       child: Row(
+                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          SvgPicture.asset(
-                            "assets/icons/Meditation_women_small.svg",
+                          Expanded(
+                            child: Container(
+                              height: 80,
+                              child: SvgPicture.asset(
+                                "assets/icons/finance.svg",
+                              ),
+                            ),
                           ),
-                          SizedBox(width: 20),
                           Expanded(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

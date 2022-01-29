@@ -51,9 +51,10 @@ class ProgresCard extends StatelessWidget {
                         lineWidth: 6.0,
                         percent: .62,
                         animation: true,
-                        center: const Text(
+                        center: Text(
                           "62%",
-                          style: TextStyle(fontSize: 11),
+                          style:
+                              TextStyle(fontSize: 11, color: Colors.grey[700]),
                         ),
                         progressColor: const Color(0xff00a075),
                       ),
