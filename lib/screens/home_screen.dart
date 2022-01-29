@@ -76,6 +76,13 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             //const SearchBar(),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(15, 15, 0, 3),
+              child: Text(
+                "Explore topics",
+                style: exploreTextStyle,
+              ),
+            ),
             Row(
               children: const [
                 CategoryCard(

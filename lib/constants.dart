@@ -7,6 +7,11 @@ const kHeadingextStyle = TextStyle(
   //color: Colors.white,
   fontWeight: FontWeight.bold,
 );
+const exploreTextStyle = TextStyle(
+  fontSize: 16,
+  //color: Colors.white,
+  fontWeight: FontWeight.bold,
+);
 const kFeedHeadingStyle = TextStyle(
   fontSize: 13,
   //color: Colors.white,
