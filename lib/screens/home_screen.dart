@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            progresCard(),
+            const ProgresCard(),
             Row(
               children: [
                 Expanded(
@@ -77,6 +77,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 10),
             //const SearchBar(),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const [
                 CategoryCard(
                   title: "Finance",
@@ -89,6 +90,7 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const [
                 CategoryCard(
                   title: "UI/UX",

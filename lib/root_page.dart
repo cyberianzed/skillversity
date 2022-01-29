@@ -1,7 +1,5 @@
 import 'package:abibas/screens/profile_screen.dart';
-import 'package:abibas/screens/details_screen.dart';
 import 'package:abibas/screens/feed_screen.dart';
-import 'package:abibas/screens/session_one.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/home_screen.dart';
