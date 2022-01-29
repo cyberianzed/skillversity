@@ -34,10 +34,10 @@ class HomeTab extends StatelessWidget {
                 author: authornames[0],
               ),
               FeedContainer(
-                image: imagenames[0],
-                title: titlenames[0],
-                feed: feednames[0],
-                author: authornames[0],
+                image: imagenames[1],
+                title: titlenames[1],
+                feed: feednames[1],
+                author: authornames[01],
               ),
               FeedContainer(
                 image: imagenames[0],
@@ -46,11 +46,12 @@ class HomeTab extends StatelessWidget {
                 author: authornames[0],
               ),
               FeedContainer(
-                image: imagenames[0],
-                title: titlenames[0],
-                feed: feednames[0],
-                author: authornames[0],
+                image: imagenames[1],
+                title: titlenames[1],
+                feed: feednames[1],
+                author: authornames[01],
               ),
+              
             ],
           ),
         ),

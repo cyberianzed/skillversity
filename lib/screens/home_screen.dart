@@ -40,12 +40,8 @@ class HomeScreen extends StatelessWidget {
                   child: Container(
                     width: 40,
                     height: 180,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage("assets/images/goal.png"),
-                        fit: BoxFit.fill,
-                      ),
-                    ),
+                    child: Expanded(
+                        child: SvgPicture.asset("assets/icons/goal.svg")),
                   ),
                 ),
                 Padding(
@@ -55,12 +51,12 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         const Text(
                           "Let's begin this journey by setting\nyour daily goal\n",
-                          style: TextStyle(fontSize: 12),
+                          style: TextStyle(fontSize: 13),
                         ),
                         Row(
                           children: [
                             const SizedBox(
-                              width: 70,
+                              width: 45,
                             ),
                             buttonText(),
                           ],

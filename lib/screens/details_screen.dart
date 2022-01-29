@@ -65,7 +65,7 @@ class DetailsScreen extends StatelessWidget {
                     ),
                     SizedBox(
                       width: size.width * .3, // it just take the 50% width
-                      height: 32,
+                      height: 31,
                     ),
                     Wrap(
                       spacing: 20,
