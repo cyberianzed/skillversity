@@ -1,11 +1,12 @@
 import 'package:abibas/widgets/feed_container.dart';
 import 'package:abibas/widgets/feed_list.dart';
 import 'package:flutter/material.dart';
-
 import '../constants.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({Key? key}) : super(key: key);
+  
+
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class HomeTab extends StatelessWidget {
               //     Image.asset("assets/images/user.png"),
               //   ],
               // ),
-              const Text("explore", style: kHeadingextStyle),
+              const Text("Explore", style: kHeadingextStyle),
               const SizedBox(height: 10),
               FeedContainer(
                 image: imagenames[0],
@@ -51,7 +52,6 @@ class HomeTab extends StatelessWidget {
                 feed: feednames[1],
                 author: authornames[01],
               ),
-              
             ],
           ),
         ),
