@@ -5,8 +5,6 @@ import '../constants.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({Key? key}) : super(key: key);
-  
-
 
   @override
   Widget build(BuildContext context) {
@@ -33,24 +31,28 @@ class HomeTab extends StatelessWidget {
                 title: titlenames[0],
                 feed: feednames[0],
                 author: authornames[0],
+                link: "https://www.wired.com/story/evs-us-investment",
               ),
               FeedContainer(
                 image: imagenames[1],
                 title: titlenames[1],
                 feed: feednames[1],
                 author: authornames[01],
+                link: "https://www.wired.com/gallery/best-android-phones",
               ),
               FeedContainer(
                 image: imagenames[0],
                 title: titlenames[0],
                 feed: feednames[0],
                 author: authornames[0],
+                link: "https://www.wired.com/story/evs-us-investment",
               ),
               FeedContainer(
                 image: imagenames[1],
                 title: titlenames[1],
                 feed: feednames[1],
                 author: authornames[01],
+                link: "https://www.wired.com/gallery/best-android-phones",
               ),
             ],
           ),

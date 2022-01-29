@@ -7,6 +7,7 @@ class FeedContainer extends StatelessWidget {
   final String title;
   final String feed;
   final String author;
+  final String link;
 
   const FeedContainer({
     Key? key,
@@ -14,6 +15,7 @@ class FeedContainer extends StatelessWidget {
     required this.title,
     required this.feed,
     required this.author,
+    required this.link,
   }) : super(key: key);
 
   Future<void> _launchInBrowser(String url) async {
@@ -33,7 +35,7 @@ class FeedContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        _launchInBrowser("https://www.wired.com");
+        _launchInBrowser(link);
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 20),
