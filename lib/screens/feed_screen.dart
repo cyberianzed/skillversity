@@ -25,7 +25,7 @@ class HomeTab extends StatelessWidget {
               //     Image.asset("assets/images/user.png"),
               //   ],
               // ),
-              const Text("focusFeed", style: kHeadingextStyle),
+              const Text("explore", style: kHeadingextStyle),
               const SizedBox(height: 10),
               FeedContainer(
                 image: imagenames[0],
