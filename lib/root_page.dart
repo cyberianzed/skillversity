@@ -28,24 +28,24 @@ class _RootAppState extends State<RootApp> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_outlined,
-              color: Colors.black,
+              color: Colors.green,
             ),
-            label: "home",
+            label: "",
             //backgroundColor: Colors.transparent,
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.search,
-              color: Colors.black,
+              color: Colors.black54,
             ),
-            label: "search",
+            label: "",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person_outlined,
-              color: Colors.black,
+              color: Colors.black54,
             ),
-            label: "Your Library",
+            label: "",
           ),
         ],
         onTap: (index) {
