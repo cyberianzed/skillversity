@@ -83,11 +83,11 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const [
                 CategoryCard(
-                  title: "Finance",
+                  title: "Financial Literacy",
                   svgSrc: "assets/icons/finance.svg",
                 ),
                 CategoryCard(
-                  title: "Craft",
+                  title: "Communication",
                   svgSrc: "assets/icons/craft.svg",
                 ),
               ],
@@ -96,11 +96,11 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const [
                 CategoryCard(
-                  title: "UI/UX",
+                  title: "Mental Health",
                   svgSrc: "assets/icons/uiux.svg",
                 ),
                 CategoryCard(
-                  title: "Coding",
+                  title: "Sex and relationships",
                   svgSrc: "assets/icons/coding.svg",
                 ),
               ],
