@@ -1,6 +1,6 @@
-import 'package:abibas/screens/demo_two.dart';
+import 'package:abibas/screens/profile_screen.dart';
 import 'package:abibas/screens/details_screen.dart';
-import 'package:abibas/screens/home_tab.dart';
+import 'package:abibas/screens/feed_screen.dart';
 import 'package:abibas/screens/session_one.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +42,7 @@ class _RootAppState extends State<RootApp> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.library_books_outlined,
+              Icons.person_outlined,
               color: Colors.black,
             ),
             label: "Your Library",
@@ -59,5 +59,5 @@ class _RootAppState extends State<RootApp> {
 }
 
 // ignore: non_constant_identifier_names
-final page_list = [const HomeScreen(), const HomeTab(), const DemoTwo()];
+final page_list = [const HomeScreen(), const HomeTab(), const ProfileScreen()];
 //final page_list = [const HomeTab(), const HomeScreen(), const DemoTwo()];

@@ -1,5 +1,5 @@
 final List imagenames = [
-  "assets/images/feed1.png",
+  "assets/images/feed.png",
 ];
 
 final List titlenames = [
