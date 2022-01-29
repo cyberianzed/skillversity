@@ -72,27 +72,27 @@ class DetailsScreen extends StatelessWidget {
                       runSpacing: 20,
                       children: const <Widget>[
                         SeassionCard(
-                          seassionNum: 1,
+                          seassionName: "Finance 101",
                           isDone: true,
                         ),
                         SeassionCard(
-                          seassionNum: 2,
+                          seassionName: "Finance 101",
                           isDone: false,
                         ),
                         SeassionCard(
-                          seassionNum: 3,
+                          seassionName: "Economics",
                           isDone: false,
                         ),
                         SeassionCard(
-                          seassionNum: 4,
+                          seassionName: "Blockchain",
                           isDone: false,
                         ),
                         SeassionCard(
-                          seassionNum: 5,
+                          seassionName: "Crypto",
                           isDone: false,
                         ),
                         SeassionCard(
-                          seassionNum: 6,
+                          seassionName: "NFTs",
                           isDone: false,
                         ),
                       ],
@@ -127,7 +127,7 @@ class DetailsScreen extends StatelessWidget {
                             child: Container(
                               height: 80,
                               child: SvgPicture.asset(
-                                "assets/icons/finance.svg",
+                                "assets/icons/finance1.svg",
                               ),
                             ),
                           ),
@@ -166,11 +166,11 @@ class DetailsScreen extends StatelessWidget {
 }
 
 class SeassionCard extends StatelessWidget {
-  final int seassionNum;
+  final String seassionName;
   final bool isDone;
 
   const SeassionCard(
-      {Key? key, required this.seassionNum, required this.isDone})
+      {Key? key, required this.seassionName, required this.isDone})
       : super(key: key);
 
   @override
@@ -206,7 +206,7 @@ class SeassionCard extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Container(
                     height: 42,
@@ -221,9 +221,12 @@ class SeassionCard extends StatelessWidget {
                       color: isDone ? Colors.white : kBlueColor,
                     ),
                   ),
-                  Text(
-                    "Session $seassionNum",
-                    style: Theme.of(context).textTheme.subtitle1,
+                  SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      seassionName,
+                      style: kFeedStampStyle,
+                    ),
                   )
                 ],
               ),

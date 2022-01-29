@@ -19,11 +19,14 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Padding(
+            Padding(
               padding: EdgeInsets.all(20.0),
-              child: Text(
-                "Hello Ashwin!",
-                style: kHeadingextStyle,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  const Text("Hey Ashwin!", style: kHeadingextStyle),
+                  Image.asset("assets/images/user.png"),
+                ],
               ),
             ),
             Container(
