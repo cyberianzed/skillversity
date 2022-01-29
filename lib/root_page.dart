@@ -20,6 +20,7 @@ class _RootAppState extends State<RootApp> {
       body: page_list[_currentIndex],
       backgroundColor: Colors.grey[800],
       bottomNavigationBar: BottomNavigationBar(
+    
         currentIndex: _currentIndex,
         enableFeedback: false,
         selectedItemColor: Colors.green,

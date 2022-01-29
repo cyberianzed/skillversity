@@ -88,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 CategoryCard(
                   title: "Communication",
-                  svgSrc: "assets/icons/craft.svg",
+                  svgSrc: "assets/icons/comm.svg",
                 ),
               ],
             ),
@@ -97,11 +97,11 @@ class HomeScreen extends StatelessWidget {
               children: const [
                 CategoryCard(
                   title: "Mental Health",
-                  svgSrc: "assets/icons/uiux.svg",
+                  svgSrc: "assets/icons/ment.svg",
                 ),
                 CategoryCard(
                   title: "Sex and relationships",
-                  svgSrc: "assets/icons/coding.svg",
+                  svgSrc: "assets/icons/se.svg",
                 ),
               ],
             ),

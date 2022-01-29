@@ -8,26 +8,26 @@ class ProgresCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) {
-              return const DetailsScreen();
-            }),
-          );
-        },
-        child: Container(
-          margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-          height: 115,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            boxShadow: kShadow,
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(10),
-          ),
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+      height: 115,
+      width: double.infinity,
+      decoration: BoxDecoration(
+        boxShadow: kShadow,
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) {
+                return const DetailsScreen();
+              }),
+            );
+          },
           child: Padding(
             padding: const EdgeInsets.all(10.0),
             child: Column(
