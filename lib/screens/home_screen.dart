@@ -95,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                   svgSrc: "assets/icons/Hamburger.svg",
                 ),
                 CategoryCard(
-                  title: "Programming",
+                  title: "Coding",
                   svgSrc: "assets/icons/Hamburger.svg",
                 ),
               ],

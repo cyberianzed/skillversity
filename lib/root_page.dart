@@ -23,27 +23,26 @@ class _RootAppState extends State<RootApp> {
       backgroundColor: Colors.grey[800],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
-        type: BottomNavigationBarType.shifting,
+        enableFeedback: false,
+        selectedItemColor: Colors.green,
+        //type: BottomNavigationBarType.shifting,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_outlined,
-              color: Colors.green,
             ),
             label: "",
             //backgroundColor: Colors.transparent,
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.search,
-              color: Colors.black54,
+              Icons.explore_outlined,
             ),
             label: "",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person_outlined,
-              color: Colors.black54,
             ),
             label: "",
           ),
