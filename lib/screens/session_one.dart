@@ -7,6 +7,18 @@ class SessionOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(
+              context,
+              MaterialPageRoute(builder: (context) {
+                return const SessionOne();
+              }),
+            );
+          },
+          icon: Icon(Icons.arrow_back_ios_new_outlined),
+          color: Colors.green,
+        ),
         elevation: 0,
         backgroundColor: Color(0xfffffbf6),
       ),

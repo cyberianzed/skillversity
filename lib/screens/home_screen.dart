@@ -3,6 +3,7 @@ import 'package:abibas/widgets/category_card.dart';
 import 'package:abibas/widgets/progres_card.dart';
 import 'package:abibas/widgets/text_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
-              padding: EdgeInsets.all(15.0),
+              padding: EdgeInsets.all(20.0),
               child: Text(
                 "Hello Ashwin!",
                 style: kHeadingextStyle,
@@ -29,12 +30,8 @@ class HomeScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 25),
               //width: 200,
               height: 270,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/images/avatar.png"),
-                  fit: BoxFit.fill,
-                ),
-              ),
+              child:
+                  Expanded(child: SvgPicture.asset("assets/icons/avatar.svg")),
             ),
             const ProgresCard(),
             Row(
@@ -88,11 +85,11 @@ class HomeScreen extends StatelessWidget {
               children: const [
                 CategoryCard(
                   title: "Finance",
-                  svgSrc: "assets/icons/Hamburger.svg",
+                  svgSrc: "assets/icons/finance.svg",
                 ),
                 CategoryCard(
                   title: "Craft",
-                  svgSrc: "assets/icons/Hamburger.svg",
+                  svgSrc: "assets/icons/craft.svg",
                 ),
               ],
             ),
@@ -101,11 +98,11 @@ class HomeScreen extends StatelessWidget {
               children: const [
                 CategoryCard(
                   title: "UI/UX",
-                  svgSrc: "assets/icons/Hamburger.svg",
+                  svgSrc: "assets/icons/uiux.svg",
                 ),
                 CategoryCard(
                   title: "Coding",
-                  svgSrc: "assets/icons/Hamburger.svg",
+                  svgSrc: "assets/icons/coding.svg",
                 ),
               ],
             ),

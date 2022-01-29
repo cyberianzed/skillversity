@@ -37,7 +37,7 @@ class CategoryCard extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                SvgPicture.asset(svgSrc),
+                Expanded(child: SvgPicture.asset(svgSrc)),
                 Text(
                   title,
                   textAlign: TextAlign.center,

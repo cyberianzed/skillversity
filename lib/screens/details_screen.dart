@@ -1,4 +1,5 @@
 import 'package:abibas/constants.dart';
+import 'package:abibas/screens/home_screen.dart';
 import 'package:abibas/screens/session_one.dart';
 import 'package:abibas/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,22 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(
+              context,
+              MaterialPageRoute(builder: (context) {
+                return const SessionOne();
+              }),
+            );
+          },
+          icon: Icon(Icons.arrow_back_ios_new_outlined),
+          color: Colors.black,
+        ),
+        elevation: 0,
+        backgroundColor: Color(0xffc7b8f5),
+      ),
       body: Stack(
         children: <Widget>[
           Container(
@@ -30,20 +47,17 @@ class DetailsScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    SizedBox(
-                      height: size.height * 0.05,
-                    ),
                     Text(
                       "Finance",
                       style:
                           TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 15),
                     Text(
                       "3-10 MIN Course",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 20),
                     SizedBox(
                       width: size.width * .6, // it just take 60% of total width
                       child: Text(
@@ -52,7 +66,7 @@ class DetailsScreen extends StatelessWidget {
                     ),
                     SizedBox(
                       width: size.width * .3, // it just take the 50% width
-                      height: 65,
+                      height: 32,
                     ),
                     Wrap(
                       spacing: 20,
@@ -86,14 +100,14 @@ class DetailsScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 20),
                     Text(
-                      "Meditation",
+                      "Finance",
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 20),
-                      padding: EdgeInsets.all(10),
+                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      //padding: EdgeInsets.all(10),
                       height: 90,
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -119,10 +133,13 @@ class DetailsScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  "Basic 2",
+                                  "Intermediate",
                                   style: Theme.of(context).textTheme.subtitle1,
                                 ),
-                                Text("Start your deepen you practice")
+                                Text(
+                                  "Strengthen your knowledge",
+                                  style: TextStyle(fontSize: 12),
+                                )
                               ],
                             ),
                           ),
