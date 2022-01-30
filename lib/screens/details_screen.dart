@@ -127,7 +127,7 @@ class DetailsScreen extends StatelessWidget {
                             child: Container(
                               height: 80,
                               child: SvgPicture.asset(
-                                "assets/icons/finance1.svg",
+                                "assets/icons/finance.svg",
                               ),
                             ),
                           ),

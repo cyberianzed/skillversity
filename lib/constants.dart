@@ -13,7 +13,7 @@ const exploreTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 const kFeedHeadingStyle = TextStyle(
-  fontSize: 18,
+  fontSize: 13,
   //color: Colors.white,
   fontWeight: FontWeight.w800,
 );
