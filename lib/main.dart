@@ -7,6 +7,6 @@ void main() {
     debugShowCheckedModeBanner: false,
     title: '.hack();',
     theme: ThemeData(textTheme: GoogleFonts.dmSansTextTheme()),
-    home: const RootApp(),
+    home: const MaterialApp(home: RootApp()),
   ));
 }

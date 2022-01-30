@@ -20,7 +20,6 @@ class _RootAppState extends State<RootApp> {
       body: page_list[_currentIndex],
       backgroundColor: Colors.grey[800],
       bottomNavigationBar: BottomNavigationBar(
-    
         currentIndex: _currentIndex,
         enableFeedback: false,
         selectedItemColor: Colors.green,
@@ -31,7 +30,6 @@ class _RootAppState extends State<RootApp> {
               Icons.home_outlined,
             ),
             label: "",
-            //backgroundColor: Colors.transparent,
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -58,4 +56,3 @@ class _RootAppState extends State<RootApp> {
 
 // ignore: non_constant_identifier_names
 final page_list = [const HomeScreen(), const HomeTab(), const ProfileScreen()];
-//final page_list = [const HomeTab(), const HomeScreen(), const DemoTwo()];
