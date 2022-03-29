@@ -1,7 +1,5 @@
 import 'package:abibas/constants.dart';
-import 'package:abibas/screens/home_screen.dart';
 import 'package:abibas/screens/session_one.dart';
-import 'package:abibas/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -22,11 +20,11 @@ class DetailsScreen extends StatelessWidget {
               }),
             );
           },
-          icon: Icon(Icons.arrow_back_ios_new_outlined),
+          icon: const Icon(Icons.arrow_back_ios_new_outlined),
           color: Colors.black,
         ),
         elevation: 0,
-        backgroundColor: Color(0xffc7b8f5),
+        backgroundColor: const Color(0xffc7b8f5),
       ),
       body: Stack(
         children: <Widget>[
@@ -35,7 +33,7 @@ class DetailsScreen extends StatelessWidget {
             // child: Expanded(
             //   child: SvgPicture.asset("assets/icons/uiux.svg"),
             // ),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: kBlueLightColor,
             ),
           ),
@@ -46,20 +44,20 @@ class DetailsScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "Finance",
                       style:
                           TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
                     ),
-                    SizedBox(height: 15),
-                    Text(
+                    const SizedBox(height: 15),
+                    const Text(
                       "3-10 MIN Course",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     SizedBox(
                       width: size.width * .6, // it just take 60% of total width
-                      child: Text(
+                      child: const Text(
                         "A series of sessions on the psychology of trading, that will guide you, mend your thoughts and prepare you psychologically to become a novice trader.",
                       ),
                     ),
@@ -97,8 +95,8 @@ class DetailsScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 20),
-                    Text(
+                    const SizedBox(height: 20),
+                    const Text(
                       "Finance",
                       style: TextStyle(
                         fontWeight: FontWeight.w900,
@@ -124,7 +122,7 @@ class DetailsScreen extends StatelessWidget {
                         //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Expanded(
-                            child: Container(
+                            child: SizedBox(
                               height: 80,
                               child: SvgPicture.asset(
                                 "assets/icons/finance.svg",
@@ -140,7 +138,7 @@ class DetailsScreen extends StatelessWidget {
                                   "Intermediate",
                                   style: Theme.of(context).textTheme.subtitle1,
                                 ),
-                                Text(
+                                const Text(
                                   "Strengthen your knowledge",
                                   style: TextStyle(fontSize: 12),
                                 )
@@ -148,7 +146,7 @@ class DetailsScreen extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             child: SvgPicture.asset("assets/icons/Lock.svg"),
                           ),
                         ],
@@ -199,7 +197,7 @@ class SeassionCard extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
-                  return SessionOne();
+                  return const SessionOne();
                 }),
               );
             },
@@ -221,7 +219,7 @@ class SeassionCard extends StatelessWidget {
                       color: isDone ? Colors.white : kBlueColor,
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Text(
                       seassionName,
