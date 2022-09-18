@@ -13,11 +13,11 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.symmetric(vertical: 10),
       height: 190,
       width: 150,
       decoration: BoxDecoration(
-        color: Color(0xfffcfefb),
+        color: const Color(0xfffcfefb),
         borderRadius: BorderRadius.circular(15),
         boxShadow: kShadow,
       ),
@@ -28,7 +28,7 @@ class CategoryCard extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) {
-                return DetailsScreen();
+                return const DetailsScreen();
               }),
             );
           },
