@@ -1,7 +1,5 @@
 import 'package:abibas/constants.dart';
-import 'package:abibas/screens/home_screen.dart';
 import 'package:abibas/screens/session_one.dart';
-import 'package:abibas/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

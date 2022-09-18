@@ -16,11 +16,11 @@ class SessionOne extends StatelessWidget {
               }),
             );
           },
-          icon: Icon(Icons.arrow_back_ios_new_outlined),
+          icon: const Icon(Icons.arrow_back_ios_new_outlined),
           color: Colors.green,
         ),
         elevation: 0,
-        backgroundColor: Color(0xfffffbf6),
+        backgroundColor: const Color(0xfffffbf6),
       ),
       body: Container(
         height: double.infinity,
