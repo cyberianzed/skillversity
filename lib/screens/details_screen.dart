@@ -65,10 +65,10 @@ class DetailsScreen extends StatelessWidget {
                       width: size.width * .3, // it just take the 50% width
                       height: 31,
                     ),
-                    Wrap(
+                    const Wrap(
                       spacing: 20,
                       runSpacing: 20,
-                      children: const <Widget>[
+                      children: <Widget>[
                         SeassionCard(
                           seassionName: "Finance 101",
                           isDone: true,
@@ -136,7 +136,8 @@ class DetailsScreen extends StatelessWidget {
                               children: <Widget>[
                                 Text(
                                   "Intermediate",
-                                  style: Theme.of(context).textTheme.subtitle1,
+                                  style:
+                                      Theme.of(context).textTheme.titleMedium,
                                 ),
                                 const Text(
                                   "Strengthen your knowledge",

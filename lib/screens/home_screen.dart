@@ -31,39 +31,33 @@ class HomeScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 25),
               //width: 200,
               height: 270,
-              child:
-                  Expanded(child: SvgPicture.asset("assets/icons/avatar.svg")),
+              child: SvgPicture.asset("assets/icons/avatar.svg"),
             ),
             const ProgresCard(),
             Row(
               children: [
-                Expanded(
-                  child: SizedBox(
-                    width: 40,
-                    height: 180,
-                    child: Expanded(
-                        child: SvgPicture.asset("assets/icons/goal.svg")),
-                  ),
+                SizedBox(
+                  width: 200,
+                  height: 180,
+                  child: SvgPicture.asset("assets/icons/goal.svg"),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 18),
-                  child: Expanded(
-                    child: Column(
-                      children: [
-                        const Text(
-                          "Let's begin this journey by setting\nyour daily goal\n",
-                          style: TextStyle(fontSize: 13),
-                        ),
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 45,
-                            ),
-                            buttonText(),
-                          ],
-                        )
-                      ],
-                    ),
+                  child: Column(
+                    children: [
+                      const Text(
+                        "Let's begin this journey by setting\nyour daily goal\n",
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      Row(
+                        children: [
+                          const SizedBox(
+                            width: 45,
+                          ),
+                          buttonText(),
+                        ],
+                      )
+                    ],
                   ),
                 )
               ],
@@ -77,9 +71,9 @@ class HomeScreen extends StatelessWidget {
                 style: exploreTextStyle,
               ),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
+              children: [
                 CategoryCard(
                   title: "Financial Literacy",
                   svgSrc: "assets/icons/finance.svg",
@@ -90,9 +84,9 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
+              children: [
                 CategoryCard(
                   title: "Mental Health",
                   svgSrc: "assets/icons/ment.svg",
